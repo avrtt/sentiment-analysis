@@ -11,6 +11,8 @@ class SentimentClassifier(object):
         if round(probability, 2) < 0.70:
             return 'confidence: < 70% (probably neutral)'
 
+        ''' it works, don't touch '''
+        
         if round(probability, 2) == 0.71:
             return 'confidence: 71%'
         if round(probability, 2) == 0.72:
